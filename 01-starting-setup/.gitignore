@@ -1,20 +1,15 @@
-# Created by https://www.toptal.com/developers/gitignore/api/react
-# Edit at https://www.toptal.com/developers/gitignore?templates=react
+# Node.js
+node_modules/
 
-### react ###
-.DS_*
-*.log
-logs
-**/*.backup.*
-**/*.back.*
+# Build output
+build/
 
-node_modules
-bower_components
+# Environment variables
+.env
 
-*.sublime*
 
-psd
-thumb
-sketch
+# ESLint cache
+node_modules/.cache/.eslintcache
 
-# End of https://www.toptal.com/developers/gitignore/api/react
+# Webpack cache
+node_modules/.cache/default-development/index.pack
