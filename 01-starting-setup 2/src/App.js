@@ -3,6 +3,7 @@ import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
 import Header from './components/Header/Header';
+import Concept from './components/Concept/Concept';
 
 const concepts = [
   {
@@ -30,31 +31,9 @@ function App() {
     <div>
       <Header></Header>
       <ul id="concepts">
-        <li className="concept">
-          <img src={concepts[0].image} alt={concepts[0].title} />
-          <h2>{concepts[0].title}</h2>
-          <p>{concepts[0].description}</p>
-        </li>
-        <li className="concept">
-          <img src={concepts[1].image} alt={concepts[1].title} />
-          <h2>{concepts[1].title}</h2>
-          <p>{concepts[1].description}</p>
-        </li>
-        <li className="concept">
-          <img src={concepts[2].image} alt={concepts[2].title} />
-          <h2>{concepts[2].title}</h2>
-          <p>{concepts[2].description}</p>
-        </li>
-
-        {concepts.map((item) => {
-          return (
-            <li className="concept">
-              <img src={item.image} alt={item.title} />
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </li>
-          )
-        })}
+        <Concept title={concepts[0].title} image={concepts[0].image} description={concepts[0].description}></Concept>
+        <Concept title={concepts[1].title} image={concepts[1].image} description={concepts[1].description}></Concept>
+        <Concept title={concepts[2].title} image={concepts[2].image} description={concepts[2].description}></Concept>
       </ul>
     </div>
   );
